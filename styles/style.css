@@ -1,0 +1,27 @@
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 1 rem;
+    background-color: #eee;
+    color: blue;
+    text-align: center;
+}
+
+main img{
+    width: 150px;
+    height: auto;
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
+p{padding: 0px;}
+
+footer{
+    margin-top: 15px;
+    border-top: 5px solid #000;
+    text-align: center;
+}
