@@ -1,27 +1,110 @@
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 5px solid rgb(0, 0, 0);
-    padding: 1 rem;
-    background-color: #eee;
-    color: blue;
+:root {
+    --primary-color: #0077cc;
+    --secondary-color: #eee;
+    --accent-color: #000;
+    --text-color: blue;
+    --background-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.hero {
+    position: relative;
     text-align: center;
 }
 
-main img{
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 5px solid var(--accent-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+main img {
     width: 150px;
     height: auto;
 }
 
-aside img{
+aside img {
     width: 200px;
     height: auto;
 }
 
-p{padding: 0px;}
+p {
+    padding: 0;
+}
 
-footer{
+footer {
     margin-top: 15px;
-    border-top: 5px solid #000;
+    border-top: 5px solid var(--accent-color);
     text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
 }
