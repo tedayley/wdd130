@@ -1,10 +1,18 @@
 :root {
-    --primary-color: #0077cc;
-    --secondary-color: #eee;
-    --accent-color: #000;
-    --text-color: blue;
-    --background-color: white;
+    --primary-color: #005fa3; /* Darker blue for better contrast */
+    --secondary-color: #f0f0f0; /* Lighter background */
+    --accent-color: #222; /* Darker text for readability */
+    --text-color: #000; /* Ensuring readability */
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -15,17 +23,23 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
 }
 
+nav {
+    display: flex;
+    gap: 15px;
+}
+
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 10px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .hero {
@@ -93,15 +107,20 @@ p {
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 5px solid var(--accent-color);
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    border-top: 5px solid var(--accent-color);
 }
 
-footer a {
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
     text-decoration: none;
-    margin: 0 5px;
 }
 
 footer img {
