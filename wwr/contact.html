@@ -6,7 +6,7 @@
     <meta name="description" content="Contact us at [Company Name] for any inquiries or support.">
     <meta name="author" content="[Company Name]">
     <title>[Company Name] - Contact Us</title>
-    <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/style.css">
+    <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/rafting.css">
 </head>
 <body>
     <header>
@@ -28,12 +28,15 @@
         <section class="contact-form">
             <h2>Get in Touch</h2>
             <form>
+                <!-- Full Name -->
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
                 
+                <!-- Email Address -->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
                 
+                <!-- Message Purpose -->
                 <label for="purpose">Message Purpose:</label>
                 <select id="purpose" name="purpose">
                     <option value="general">General Inquiry</option>
@@ -41,12 +44,30 @@
                     <option value="booking">Booking Request</option>
                 </select>
                 
+                <!-- Your Message -->
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
+                <!-- Newsletter Subscription -->
                 <label>
                     <input type="checkbox" name="newsletter"> Subscribe to our newsletter
                 </label>
+                
+                <!-- Communication Preference (Radio buttons) -->
+                <label>Preferred Communication:</label>
+                <label for="emailPref">Email</label>
+                <input type="radio" id="emailPref" name="contactPref" value="email">
+                <label for="phonePref">Phone</label>
+                <input type="radio" id="phonePref" name="contactPref" value="phone">
+                
+                <!-- Message Importance (Radio buttons) -->
+                <label>How important is this message?</label>
+                <label for="lowImportance">Low</label>
+                <input type="radio" id="lowImportance" name="importance" value="low">
+                <label for="mediumImportance">Medium</label>
+                <input type="radio" id="mediumImportance" name="importance" value="medium">
+                <label for="highImportance">High</label>
+                <input type="radio" id="highImportance" name="importance" value="high">
                 
                 <button type="submit">Send Message</button>
             </form>
