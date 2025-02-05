@@ -1,71 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="About page for White Water Rafting Co.">
-        <meta name="author" content="Taeg Dayley">
-        <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/rafting.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <img src="../images/logo.png" alt="White Water Rafting Co. Logo" width="100">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="wwr/about.html">About</a>
-                <a href="#">Trips</a>
-                <a href="wwr/contact.html">Contact</a>
-            </nav>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <main>
-            <div class="hero">
-                <img src="../images/hero.jpg" alt="Rafting Adventure">
-                <h1>White Water Rafting Co.</h1>
-                <article>
-                    <img src="../images/hero-article.jpg" alt="Rafting Team">
-                    <p>Experience the thrill of white water rafting with our expert guides. Adventure awaits on the most exciting rivers!</p>
-                </article>
-            </div>
+<header>
+    <img src="../images/banner.jpg" alt="Rafting Adventures Banner" class="banner">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-            <section>
-                <h2>Our Mission</h2>
-                <p>At White Water Rafting Co., our goal is to provide exhilarating rafting experiences on the most beautiful rivers. We focus on safety, adventure, and creating lifelong memories for our guests.</p>
-            </section>
+<section class="hero">
+    <img src="../images/hero.jpg" alt="Rafting on a River">
+    <h1>Experience the Thrill of Whitewater Rafting</h1>
+    <article>
+        <img src="../images/hero-article.jpg" alt="Rafting Experience">
+        <p>Join us for an unforgettable adventure navigating through the most exhilarating rapids!</p>
+    </article>
+</section>
 
-            <section>
-                <h2>History</h2>
-                <p>Founded in 1990, White Water Rafting Co. has grown into one of the premier rafting companies in the region. Our team is passionate about the outdoors and dedicated to providing a fun and safe rafting adventure for everyone.</p>
-                <img src="../images/rafting-history.jpg" alt="Historic Rafting" width="100%">
-            </section>
+<main>
+    <h2>Our History</h2>
+    <article class="history">
+        <img src="../images/rafting-history.jpg" alt="Rafting History">
+        <p>For over 20 years, we've been guiding adventurers through thrilling river expeditions.</p>
+    </article>
 
-            <section>
-                <h2>Adventure Awaits You</h2>
-                <p>Ready for the ultimate adventure? Join us on a thrilling rafting trip, surrounded by stunning natural landscapes. Explore the waters with our expert guides!</p>
-                <div class="adventure-gallery">
-                    <img src="../images/rapids_1.jpg" alt="Rafting 1">
-                    <img src="../images/rapids_2.jpg" alt="Rafting 2">
-                    <img src="../images/rapids_3.jpg" alt="Rafting 3">
-                    <img src="../images/rapids_4.jpg" alt="Rafting 4">
-                    <img src="../images/rapids_5.jpg" alt="Rafting 5">
-                </div>
-            </section>
-        </main>
+    <h2>Explore Our Rapids</h2>
+    <section class="rapids-gallery">
+        <img src="../images/rapids_1.jpg" alt="Rapids 1">
+        <img src="../images/rapids_2.jpg" alt="Rapids 2">
+        <img src="../images/rapids_3.jpg" alt="Rapids 3">
+        <img src="../images/rapids_4.jpg" alt="Rapids 4">
+        <img src="../images/rapids_5.jpg" alt="Rapids 5">
+    </section>
 
-        <footer>
-            <p>©2025 White Water Rafting Co. | Taeg Dayley, Florida, USA</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/whitewaterrafting" target="_blank">
-                    <img src="../images/facebook-icon.png" alt="Facebook" width="40">
-                </a>
-                <a href="https://twitter.com/whitewaterrafting" target="_blank">
-                    <img src="../images/twitter-icon.png" alt="Twitter" width="40">
-                </a>
-                <a href="https://www.instagram.com/whitewaterrafting" target="_blank">
-                    <img src="../images/instagram-icon.png" alt="Instagram" width="40">
-                </a>
-            </div>
-        </footer>
-    </body>
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@raftingadventures.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+    <div class="social-media">
+        <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+</footer>
+
+</body>
 </html>
