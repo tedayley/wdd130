@@ -17,34 +17,50 @@
     <header>
         <img src="images/logo.png" alt="Rafting Company Logo" width="100">
         <nav>
-            <a href="index.html">Home</a> <!-- Link to the homepage -->
-            <a href="wwr/about.html">About</a> <!-- Link to about.html in the wwr folder -->
-            <a href="#">Trips</a>
+            <a href="index.html">Home</a>
+            <a href="wwr/about.html">About</a>
+            <a href="wwr/trips.html">Trips</a>
             <a href="wwr/contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure">
-            <h1>White Water Rafting Co.</h1>
-            <article>
-                <p>Join us for the adventure of a lifetime, riding the wildest rivers! Kelpie not included.</p>
-            </article>
+            <img src="images/hero-wide.jpg" alt="Rafting Adventure" class="full-width">
+            <div class="hero-text">
+                <h1>Experience the Thrill of White Water Rafting</h1>
+                <p>Your next great adventure starts here.</p>
+                <a href="wwr/trips.html" class="cta-button">Explore Our Trips</a>
+            </div>
         </div>
         
-        <section>
-            <h2>History</h2>
-            <p>When I was a small child I was out in the woods, where I was kidnapped by a kelpie and dragged to the bottom of the river. Barely escaping with my life I vowed to never fear the river and to conquer it so I built a rafting company.</p>
+        <section class="newsletter">
+            <h2>Stay Updated!</h2>
+            <p>Sign up for our newsletter to get the latest rafting updates and special offers.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Join the Adventure</button>
+            </form>
         </section>
-
-        <section>
-            <h2>Adventure Awaits You</h2>
-            <img src="images/rapids_1.png" alt="Rafting 1" width="150">
-            <img src="images/rapids_2.png" alt="Rafting 2" width="150">
-            <img src="images/rapids_3.png" alt="Rafting 3" width="150">
-            <img src="images/rapids_4.png" alt="Rafting 4" width="150">
-            <img src="images/rapids_5.png" alt="Rafting 5" width="150">
+        
+        
+        <section class="company-info">
+            <h2>Why Choose Us?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <img src="images/adventure.png" alt="Adventure Icon">
+                    <p>We offer the most thrilling rafting experiences tailored to a variety of skill levels.</p>
+                </div>
+                <div class="info-item">
+                    <img src="images/safety.png" alt="Safety Icon">
+                    <p>Your safety is our top priority. Our guides are highly trained professionals.</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -55,6 +71,6 @@
             <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
             <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
