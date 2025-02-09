@@ -1,76 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience the thrill of whitewater rafting with expert guides and breathtaking rapids. Join us for an unforgettable adventure!">
-    <meta name="keywords" content="whitewater rafting, adventure, outdoor activities, river rafting, extreme sports">
-    <meta name="author" content="Rafting Adventures">
-    <title>Rafting Adventures</title>
-    <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/styles.css">
+    <meta name="description" content="Explore our exciting rafting trips. Choose from thrilling adventures, family-friendly floats, and extreme challenges.">
+    <meta name="author" content="Taeg Dayley">
+    <meta name="keywords" content="rafting, white water rafting, adventure, outdoor activities, family trips">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .trip-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .trip-table th, .trip-table td {
+            border: 2px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+        .trip-table th {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" width="100">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/about.html">About</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="wwr/contact.html">Contact</a>
+        </nav>
+    </header>
 
-<header>
-    <img src="../images/banner.jpg" alt="Rafting Adventures Banner" class="banner">
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <main>
+        <h1>Our Exciting Rafting Trips</h1>
+        
+        <section class="trips-grid">
+            <h2>Available Trips</h2>
+            <article class="trip">
+                <h3>River Rapids Adventure</h3>
+                <img src="images/trip1.jpg" alt="River Rapids Adventure">
+                <p>Experience the thrill of class IV rapids on this exciting day trip.</p>
+            </article>
+            <article class="trip">
+                <h3>Scenic Family Float</h3>
+                <img src="images/trip2.jpg" alt="Scenic Family Float">
+                <p>A relaxing trip perfect for families and beginners, featuring stunning landscapes.</p>
+            </article>
+            <article class="trip">
+                <h3>Extreme White Water Challenge</h3>
+                <img src="images/trip3.jpg" alt="Extreme White Water Challenge">
+                <p>For adrenaline junkies, take on the most intense rapids on this multi-day expedition.</p>
+            </article>
+        </section>
+        
+        <section class="trip-table">
+            <h2>Trip Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>River Rapids Adventure</td>
+                        <td>Intermediate</td>
+                        <td>1 Day</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr>
+                        <td>Scenic Family Float</td>
+                        <td>Easy</td>
+                        <td>Half-Day</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme White Water Challenge</td>
+                        <td>Advanced</td>
+                        <td>3 Days</td>
+                        <td>$450</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-<section class="hero">
-    <img src="../images/hero.jpg" alt="Rafting on a River">
-    <h1>Experience the Thrill of Whitewater Rafting</h1>
-    <article>
-        <img src="../images/hero-article.jpg" alt="Rafting Experience">
-        <p>Join us for an unforgettable adventure navigating through the most exhilarating rapids!</p>
-    </article>
-</section>
+        <section class="cta">
+            <h2>Book Your Adventure</h2>
+            <p>Ready for the adventure of a lifetime? Contact us to book your trip today!</p>
+            <a href="wwr/contact.html" class="cta-button">Book Your Trip</a>
+        </section>
+    </main>
 
-<main>
-    <h2>Our History</h2>
-    <article class="history">
-        <img src="../images/rafting-history.jpg" alt="Rafting History">
-        <p>For over 20 years, we've been guiding adventurers through thrilling river expeditions.</p>
-    </article>
-
-    <h2>Explore Our Rapids</h2>
-    <section class="rapids-gallery">
-        <img src="../images/rapids_1.jpg" alt="Rapids 1">
-        <img src="../images/rapids_2.jpg" alt="Rapids 2">
-        <img src="../images/rapids_3.jpg" alt="Rapids 3">
-        <img src="../images/rapids_4.jpg" alt="Rapids 4">
-        <img src="../images/rapids_5.jpg" alt="Rapids 5">
-    </section>
-
-    <section class="contact-info">
-        <h2>Contact Us</h2>
-        <p>Email: info@raftingadventures.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
-
-    <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
-    <div class="social-media">
-        <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
-    </div>
-</footer>
-
+    <footer>
+        <p>©2025 White Water Rafting Co. | Taeg Dayley</p>
+        <div class="footer-social">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
