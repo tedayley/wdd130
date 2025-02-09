@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our exciting rafting trips.">
+    <meta name="description" content="Explore our exciting rafting trips. Choose from thrilling adventures, family-friendly floats, and extreme challenges.">
     <meta name="author" content="Taeg Dayley">
+    <meta name="keywords" content="rafting, white water rafting, adventure, outdoor activities, family trips">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/styles.css">
+    <style>
+        .trip-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .trip-table th, .trip-table td {
+            border: 2px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+        .trip-table th {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,21 +43,22 @@
         <h1>Our Exciting Rafting Trips</h1>
         
         <section class="trips-grid">
-            <div class="trip">
-                <img src="../images/rapids_1.jpg" alt="River Rapids Adventure">
-                <h2>River Rapids Adventure</h2>
+            <h2>Available Trips</h2>
+            <article class="trip">
+                <img src="images/trip1.jpg" alt="River Rapids Adventure">
+                <h3>River Rapids Adventure</h3>
                 <p>Experience the thrill of class IV rapids on this exciting day trip.</p>
-            </div>
-            <div class="trip">
-                <img src="../images/rapids_2.jpg" alt="Scenic Family Float">
-                <h2>Scenic Family Float</h2>
+            </article>
+            <article class="trip">
+                <img src="images/trip2.jpg" alt="Scenic Family Float">
+                <h3>Scenic Family Float</h3>
                 <p>A relaxing trip perfect for families and beginners, featuring stunning landscapes.</p>
-            </div>
-            <div class="trip">
-                <img src="../images/rapids_3.jpg" alt="Extreme White Water Challenge">
-                <h2>Extreme White Water Challenge</h2>
+            </article>
+            <article class="trip">
+                <img src="images/trip3.jpg" alt="Extreme White Water Challenge">
+                <h3>Extreme White Water Challenge</h3>
                 <p>For adrenaline junkies, take on the most intense rapids on this multi-day expedition.</p>
-            </div>
+            </article>
         </section>
         
         <section class="trip-table">
@@ -79,10 +95,11 @@
             </table>
         </section>
 
-        <div class="cta">
+        <section class="cta">
+            <h2>Book Your Adventure</h2>
             <p>Ready for the adventure of a lifetime? Contact us to book your trip today!</p>
-            <a href="contact.html" class="cta-button">Book Your Trip</a>
-        </div>
+            <a href="wwr/contact.html" class="cta-button">Book Your Trip</a>
+        </section>
     </main>
 
     <footer>
