@@ -8,13 +8,63 @@
     
     <title>White Water Rafting Adventures</title>
 
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/styles.css">
+    <style>
+        /* Additional styles for grid layout */
+        .company-overview {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .company-overview img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .company-overview .overview-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .company-overview h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .company-overview p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Full-width image in the hero section */
+        .hero img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #fff;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #006699;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #004c66;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,6 +87,24 @@
             </div>
         </div>
         
+        <!-- New Content for Company Overview -->
+        <section class="company-overview">
+            <div>
+                <img src="images/adventure.png" alt="Adventure Icon">
+            </div>
+            <div class="overview-text">
+                <h2>Why Choose Us?</h2>
+                <p>We offer the most thrilling rafting experiences tailored to a variety of skill levels. Whether you are a seasoned adventurer or a first-timer, we ensure you have the best possible experience on the water.</p>
+            </div>
+            <div>
+                <img src="images/safety.png" alt="Safety Icon">
+            </div>
+            <div class="overview-text">
+                <h2>Your Safety, Our Priority</h2>
+                <p>Your safety is our top priority. Our guides are highly trained professionals who prioritize making sure every raft trip is not only exciting but also safe for all participants.</p>
+            </div>
+        </section>
+
         <section class="newsletter">
             <h2>Stay Updated!</h2>
             <p>Sign up for our newsletter to get the latest rafting updates and special offers.</p>
