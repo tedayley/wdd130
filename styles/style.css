@@ -1,0 +1,37 @@
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Ensures space between columns */
+    gap: 20px;  /* Optional: Adds space between columns */
+    flex-wrap: wrap;  /* Allows columns to wrap on smaller screens */
+}
+
+.trips-grid, .trip-table {
+    width: 48%; /* Each column takes up 48% of the width, leaving space for the gap */
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: lightblue;
+}
+
+/* Optional: Style for images */
+.trip img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button style for cta */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
