@@ -16,48 +16,77 @@
     
     <link rel="stylesheet" href="https://tedayley.github.io/wdd130/styles/styles.css">
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .trips-grid {
+            flex: 1 1 60%;  /* Takes up 60% of the width */
+        }
+
+        .trip-table {
+            flex: 1 1 35%;  /* Takes up 35% of the width */
+        }
+
+        .trip img {
+            width: 100%;  /* Ensures images fill their container */
+            height: auto;
+        }
+
         .trip-table table {
             width: 100%;
             border-collapse: collapse;
         }
+
         .trip-table th, .trip-table td {
             border: 2px solid blue;
             padding: 10px;
             text-align: center;
         }
+
         .trip-table th {
             background-color: lightblue;
-        }
-
-        /* Create two-column layout */
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .trips-grid {
-            flex: 1 1 50%;
-        }
-
-        .trip-table {
-            flex: 1 1 50%;
-        }
-
-        .trip {
-            margin-bottom: 20px;
-        }
-
-        /* Optional: Style for images */
-        .trip img {
-            width: 100%;
-            height: auto;
         }
 
         /* Button style for cta */
         .cta {
             text-align: center;
             margin-top: 30px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
         }
     </style>
 </head>
