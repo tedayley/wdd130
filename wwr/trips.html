@@ -9,7 +9,6 @@
     
     <title>Possible Trips, yay!</title>
 
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +28,37 @@
         .trip-table th {
             background-color: lightblue;
         }
+
+        /* Create two-column layout */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .trips-grid {
+            flex: 1 1 50%;
+        }
+
+        .trip-table {
+            flex: 1 1 50%;
+        }
+
+        .trip {
+            margin-bottom: 20px;
+        }
+
+        /* Optional: Style for images */
+        .trip img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Button style for cta */
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -42,9 +72,7 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Our Exciting Rafting Trips</h1>
-        
+    <main class="main-content">
         <section class="trips-grid">
             <h2>Available Trips</h2>
             <article class="trip">
@@ -62,8 +90,24 @@
                 <h3>Extreme White Water Challenge</h3>
                 <p>For adrenaline junkies, take on the most intense rapids on this multi-day expedition.</p>
             </article>
+            <!-- New Trip Details -->
+            <article class="trip">
+                <img src="images/rapids_1.jpg" alt="Rapid 1 Adventure">
+                <h3>Rapid 1 Adventure</h3>
+                <p>Navigate through the most thrilling class III rapids in a half-day adventure.</p>
+            </article>
+            <article class="trip">
+                <img src="images/rapids_2.jpg" alt="Rapid 2 Challenge">
+                <h3>Rapid 2 Challenge</h3>
+                <p>For intermediate adventurers, experience class IV rapids with more challenging obstacles.</p>
+            </article>
+            <article class="trip">
+                <img src="images/rapids_3.jpg" alt="Rapid 3 Expedition">
+                <h3>Rapid 3 Expedition</h3>
+                <p>For the ultimate adventure, take on class V rapids in a multi-day expedition with expert guides.</p>
+            </article>
         </section>
-        
+
         <section class="trip-table">
             <h2>Trip Overview</h2>
             <table>
@@ -94,16 +138,34 @@
                         <td>3 Days</td>
                         <td>$450</td>
                     </tr>
+                    <tr>
+                        <td>Rapid 1 Adventure</td>
+                        <td>Intermediate</td>
+                        <td>Half-Day</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Rapid 2 Challenge</td>
+                        <td>Intermediate</td>
+                        <td>1 Day</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Rapid 3 Expedition</td>
+                        <td>Advanced</td>
+                        <td>3 Days</td>
+                        <td>$500</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
-
-        <section class="cta">
-            <h2>Book Your Adventure</h2>
-            <p>Ready for the adventure of a lifetime? Contact us to book your trip today!</p>
-            <a href="wwr/contact.html" class="cta-button">Book Your Trip</a>
-        </section>
     </main>
+
+    <section class="cta">
+        <h2>Book Your Adventure</h2>
+        <p>Ready for the adventure of a lifetime? Contact us to book your trip today!</p>
+        <a href="wwr/contact.html" class="cta-button">Book Your Trip</a>
+    </section>
 
     <footer>
         <p>©2025 White Water Rafting Co. | Taeg Dayley</p>
