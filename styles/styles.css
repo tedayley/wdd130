@@ -215,3 +215,15 @@ aside img {
 p { padding: 0; 
 }
 
+.main-content {
+    display: flex;
+    gap: 20px;  /* Space between columns */
+}
+
+.trips-grid {
+    flex: 1 1 50%;  /* This takes up 50% of the width */
+}
+
+.trip-table {
+    flex: 1 1 50%;  /* This also takes up 50% of the width */
+}
