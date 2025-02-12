@@ -18,7 +18,7 @@
         /* Additional styles for grid layout */
         .company-overview {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin: 40px 0;
         }
@@ -50,6 +50,18 @@
             width: 100%;
             height: auto;
             border-bottom: 5px solid #fff;
+        }
+
+        /* Two-column layout for main content */
+        .two-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .two-columns .content-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
 
         .cta-button {
@@ -87,7 +99,12 @@
             </div>
         </div>
         
-        <!-- New Content for Company Overview -->
+        <!-- Full-width image between sections -->
+        <section>
+            <img src="images/logo.png" alt="Rafting Action" class="full-width">
+        </section>
+
+        <!-- Company Overview Section with 2 Columns -->
         <section class="company-overview">
             <div>
                 <img src="images/adventure.png" alt="Adventure Icon">
@@ -102,6 +119,18 @@
             <div class="overview-text">
                 <h2>Your Safety, Our Priority</h2>
                 <p>Your safety is our top priority. Our guides are highly trained professionals who prioritize making sure every raft trip is not only exciting but also safe for all participants.</p>
+            </div>
+        </section>
+
+        <!-- Two Column Content Section -->
+        <section class="two-columns">
+            <div class="content-text">
+                <h2>Our Purpose</h2>
+                <p>Our goal is simple: to provide the best rafting experiences in the most scenic and thrilling locations. We believe in pushing the limits of adventure while ensuring the highest level of safety and fun. Join us on a journey that you will never forget.</p>
+            </div>
+            <div class="content-text">
+                <h2>Our Offerings</h2>
+                <p>We offer a range of packages to suit all types of adventurers. From beginner-friendly trips to adrenaline-pumping, expert-level rapids, we have something for everyone. Explore our trips and find the perfect adventure for you.</p>
             </div>
         </section>
 
